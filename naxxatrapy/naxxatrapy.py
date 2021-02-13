@@ -77,24 +77,28 @@ def gravitational_force():
     pass
 
 
-def work():
-    pass
+def work(force,displacement):
+    work = force * displacement
+    return work
 
 
-def power():
-    pass
+def power(work,time):
+    power=work/time
+    return power
 
 
-def kinetic_energy():
-    pass
+def kinetic_energy(mass, velocity):
+    kinetic_energy=0.5*mass*velocity**2
+    return kinetic_energy
 
 
-def total_energy():
-    pass
-
-
-def centripetal_force():
-    pass
+def total_energy(ke,pe):
+    total_energy=ke+pe
+    return total_energy
+    
+def centripetal_force(mass,velocity,radius):
+    centripetal_force=mass*velocity**2/radius
+    return centripetal_force
 
 
 def friction():
