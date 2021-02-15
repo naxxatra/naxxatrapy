@@ -1,3 +1,7 @@
+import math
+g = 9.8066
+
+
 def velocity(displacement, time):
     """
         Calculate velocity given displacement and time
