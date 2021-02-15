@@ -72,9 +72,10 @@ def momentum():
 def force(mass, acceleration=None, velocity=None, time=None):
     pass
 
-
-def gravitational_force():
-    pass
+def gravitational_force(m1,m2,r):
+    G=6.67384*10**(-11)
+    gravitatioal_force=G*m1*m2/r**2
+    return gravitational-force
 
 
 def work(force,displacement):
