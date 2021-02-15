@@ -1,45 +1,21 @@
 def velocity(displacement, time):
-    """
-        Calculate velocity given displacement and time
-        Parameters
-        ----------
-        displacement : float
-        time: float
-
-        Returns
-        -------
-        float
-    """
-    pass
+    return (displacement/time)
+    
 
 
 def displacement(velocity, time, acceleration):
-    """
-        Calculate displacement given velocity and time
-        Parameters
-        ----------
-        velocity : float
-        time: float
-
-        Returns
-        -------
-        float
-    """
-    pass
+    return (velocity*time) + (0.5*velocity*(time**2))
+    
 
 
 def average_velocity(velocity_list):
-    """
-        Calculate the average velocity given multiple velocities
-        Parameters
-        ----------
-        velocity_list : list
-
-        Returns
-        -------
-        float
-    """
-    pass
+    for x in range(len(velocity_list)): 
+        pass
+    add = 0
+    for i in range(len(velocity_list)):
+        sum_vel = sum_vel + velocity_list[i]
+    return sum_vel/x
+    
 
 
 def acceleration(velocity, time):
