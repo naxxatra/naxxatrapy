@@ -104,4 +104,5 @@ def friction():
 def normal_force():
     pass
 
-
+def time_period(length):
+    return 2 * math.pi * math.sqrt(length/g)
