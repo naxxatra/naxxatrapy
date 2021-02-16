@@ -286,7 +286,7 @@ def centripetal_force(m, v, r):
     """
        Centripetal force is the net force
        that acts on an object with mass 'm' to 
-       keep it moving with a velocity 'v' along
+       keep it moving with a velocity 'v' tracing
        a circular path of radius 'r'
        
        Parameters
