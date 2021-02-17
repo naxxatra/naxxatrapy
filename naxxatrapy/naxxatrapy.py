@@ -1,4 +1,3 @@
-G = 6.674 × 10**(-11)
 from numpy import *
 
 def velocity(displacement, time):
@@ -76,26 +75,9 @@ def force(mass, acceleration=None, velocity=None, time=None):
     pass
 
 def gravitational_force(m1, m2, r):
-
-    """ 
-       Calculates the gravitational force 
-       between two objects of mass m1 and m2 
-       seperated by a distance of r
-       
-       Parameters
-       ----------
-       m1 : float
-       m2 : float 
-       r : float
-       
-       Returns
-       -------
-       float
-    """
-    return G * m1 * m2 / r**2
+    pass
 
 def work(force, displacement, theta):
-
     """
        Calculates the work done by 
        the force while displacing
@@ -114,7 +96,6 @@ def work(force, displacement, theta):
     return force * displacement * cos(theta)
 
 def power(work, time):
-
     """
        Power is the rate at which the work is done.
        Calculates the amountof work done divided by 
@@ -132,7 +113,6 @@ def power(work, time):
     return work / time
 
 def kinetic_energy(mass, velocity):
-
     """
        Calculates the energy associated 
        with an object with mass moving
@@ -150,7 +130,6 @@ def kinetic_energy(mass, velocity):
     return (1/2) * mass * velocity**2
 
 def total_energy(T, V):
-
     """
        Total energy of an object is 
        the sum of its kinetic energy 
@@ -168,7 +147,6 @@ def total_energy(T, V):
     return T + V
 
 def angular_displacement(l, r):
-
     """
        Calculates the angular displacement of
        an object whose linear displacement is 
@@ -186,7 +164,6 @@ def angular_displacement(l, r):
     return l / r
 
 def angular_velocity(v, r):
-
     """
        Calculates the angular velocity of an
        object whose linear velocity is 'v'
@@ -204,7 +181,6 @@ def angular_velocity(v, r):
     return v / r
 
 def angular_acceleration(a, r):
-
     """
        Calculates the angular acceleration of an
        object whose linear acceelration is 'a' and 
@@ -222,7 +198,6 @@ def angular_acceleration(a, r):
     return a / r
 
 def moment_of_inertia(m, k):
-
     """
        Calculates the moment of inertia of an object
        of mass 'm' with radius of gyration 'k'
@@ -239,7 +214,6 @@ def moment_of_inertia(m, k):
     return m * k**2
 
 def angular_momentum(m, v, r, theta):
-
     """
        Calculates the angular momentum of an object 
        of mass 'm' whose linear velocity is 'v' and 
@@ -260,7 +234,6 @@ def angular_momentum(m, v, r, theta):
     return m * v * r * sin(theta) 
 
 def centripetal_acceleration(v, r):
-
     """
        Calculates the centripetal acceleration of
        an object whose linear velocity is 'v' and 
@@ -278,7 +251,6 @@ def centripetal_acceleration(v, r):
     return v**2 / r
 
 def centripetal_force(m, v, r):
-
     """
        Centripetal force is the net force
        that acts on an object with mass 'm' to 
@@ -298,7 +270,6 @@ def centripetal_force(m, v, r):
     return m * v**2 / r
 
 def angular_kinetic_energy(I, w):
-
     """
        Calculates the angular kinetic energy
        of an object with moment of inertia 'I'
@@ -316,7 +287,6 @@ def angular_kinetic_energy(I, w):
     return (1/2) * I * w**2
 
 def torque(r, F, theta):
-
     """
        Calculates the torque acting on an object
        where 'r' is the radius, 'F' is the force 
