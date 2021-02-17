@@ -1,5 +1,3 @@
-from numpy import *
-
 def velocity(displacement, time):
     """
         Calculate velocity given displacement and time
@@ -93,7 +91,7 @@ def work(force, displacement, theta):
        -------
        float
     """
-    return force * displacement * cos(theta)
+    return force * displacement * math.cos(theta)
 
 def power(work, time):
     """
@@ -231,7 +229,7 @@ def angular_momentum(m, v, r, theta):
        -------
        float
     """
-    return m * v * r * sin(theta) 
+    return m * v * r * math.sin(theta) 
 
 def centripetal_acceleration(v, r):
     """
@@ -303,7 +301,7 @@ def torque(r, F, theta):
        -------
        float
     """
-    return  r * F * sin(theta)
+    return  r * F * math.sin(theta)
 
 def friction():
     pass
