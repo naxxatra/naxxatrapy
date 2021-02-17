@@ -74,7 +74,7 @@ def momentum():
 def force(mass, acceleration=None, velocity=None, time=None):
     pass
 
-def gravitational_force(m1, m2, r):
+def gravitational_force():
     pass
 
 def work(force, displacement, theta):
