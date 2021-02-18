@@ -56,24 +56,88 @@ def acceleration(velocity, time):
     """
     pass
 
+def initial_velocity(final_velocity, acceleration, time):
+    """
+        Calculates the initial_velocity when given final_velocity, acceleration and time
 
-def initial_velocity():
-    pass
+        Parameters
+        ----------
+        final_velocity : float
+        acceleration : float
+        time : float
+
+        Returns
+        -------
+        float
+    """
+    return final_velocity - acceleration * time
 
 
-def final_velocity():
-    pass
+def final_velocity(initial_velocity, acceleration, time):
+    """
+        Calculates the final_velocity when given initial_velocity, acceleration and time
+
+        Parameters
+        ----------
+        initial_velocity : float
+        acceleration : float
+        time : float
+
+        Returns
+        -------
+        float
+    """
+    return initial_velocity + acceleration * time
 
 
-def momentum():
-    pass
+def momentum(mass, velocity):
+    """
+        Calculates the momentum when given mass and velocity
+
+        Parameters
+        ----------
+        mass : float
+        velocity : float
+
+        Returns
+        -------
+        float
+    """
+    return mass * velocity
 
 
-def force(mass, acceleration=None, velocity=None, time=None):
-    pass
+def force(mass, acceleration):
+    """
+        Calculates the momentum when given mass and acceleration
 
-def gravitational_force():
-    pass
+        Parameters
+        ----------
+        mass : float
+        acceleration : float
+
+        Returns
+        -------
+        float
+    """
+    return mass * acceleration
+
+
+def gravitational_force(M, m, r, G = 6.674 * ( 10 ** - 11 ) ) :
+    """
+        Calculates the gravitational_force when given Mass of object1 = M, Mass of object2 = m, Distance
+        between center of masses = r and Gravitational constant = G
+
+        Parameters
+        ----------
+        M : float
+        m : float
+        r : float
+
+        Returns
+        -------
+        float
+    """
+    return  G * M * m  / r ** 2
 
 def work(force, displacement, theta):
     """
