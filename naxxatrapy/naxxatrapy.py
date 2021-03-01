@@ -1,5 +1,7 @@
 import math
 
+g = 9.8066
+
 
 def velocity(displacement, time):
     """
@@ -388,4 +390,15 @@ def friction():
 def normal_force():
     pass
 
+def time_period(length):
+    """
+        Calculate the time period given length
+        Parameters
+        ----------
+        length : float
 
+        Returns
+        -------
+        float
+    """
+    return 2 * math.pi * math.sqrt(length / g) 
