@@ -1,17 +1,33 @@
-import setuptools
-from packagename.version import Version
+import pathlib
+from setuptools import setup
 
+# The directory containing this file
+HERE = pathlib.Path(__file__).parent
 
-setuptools.setup(name='naxxatrapy',
-                 version=Version('1.0.0').number,
-                 description='Python Package Boilerplate',
-                 long_description=open('README.md').read().strip(),
-                 author='Package Author',
-                 author_email='you@youremail.com',
-                 url='http://path-to-my-packagename',
-                 py_modules=['packagename'],
-                 install_requires=[],
-                 license='MIT License',
-                 zip_safe=False,
-                 keywords='boilerplate package',
-                 classifiers=['Packages', 'Boilerplate'])
+# The text of the README file
+README = (HERE / "README.md").read_text()
+
+# This call to setup() does all the work
+setup(
+    name="naxxatrapy",
+    version="1.0.1",
+    description="Read the latest Real Python tutorials",
+    long_description=README,
+    long_description_content_type="text/markdown",
+    url="https://github.com/naxxatra/naxxatrapy",
+    author="Naxxatra Sciences",
+    author_email="contact@naxxatra.com",
+    license="MIT",
+    classifiers=[
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.7",
+    ],
+    packages=["naxxatrapy"],
+    include_package_data=True,
+    # entry_points={
+    #     "console_scripts": [
+    #         "naxxatrapy=reader.__main__:main",
+    #     ]
+    # },
+)
