@@ -1,3 +1,6 @@
+import math
+
+
 def velocity(displacement, time):
     """
         Calculate velocity given displacement and time
@@ -110,6 +113,7 @@ def power(work, time):
     """
     return work / time
 
+
 def kinetic_energy(mass, velocity):
     """
        Calculates the energy associated 
@@ -126,6 +130,7 @@ def kinetic_energy(mass, velocity):
        float
     """
     return (1/2) * mass * velocity**2
+
 
 def total_energy(T, V):
     """
@@ -144,6 +149,7 @@ def total_energy(T, V):
     """
     return T + V
 
+
 def angular_displacement(l, r):
     """
        Calculates the angular displacement of
@@ -160,6 +166,7 @@ def angular_displacement(l, r):
        float
     """
     return l / r
+
 
 def angular_velocity(v, r):
     """
@@ -178,6 +185,7 @@ def angular_velocity(v, r):
     """
     return v / r
 
+
 def angular_acceleration(a, r):
     """
        Calculates the angular acceleration of an
@@ -195,6 +203,7 @@ def angular_acceleration(a, r):
     """
     return a / r
 
+
 def moment_of_inertia(m, k):
     """
        Calculates the moment of inertia of an object
@@ -210,6 +219,7 @@ def moment_of_inertia(m, k):
        float
     """
     return m * k**2
+
 
 def angular_momentum(m, v, r, theta):
     """
@@ -231,6 +241,7 @@ def angular_momentum(m, v, r, theta):
     """
     return m * v * r * math.sin(theta) 
 
+
 def centripetal_acceleration(v, r):
     """
        Calculates the centripetal acceleration of
@@ -247,6 +258,7 @@ def centripetal_acceleration(v, r):
        float
     """
     return v**2 / r
+
 
 def centripetal_force(m, v, r):
     """
@@ -267,7 +279,8 @@ def centripetal_force(m, v, r):
     """
     return m * v**2 / r
 
-def angular_kinetic_energy(I, w):
+
+def angular_kinetic_energy(i, w):
     """
        Calculates the angular kinetic energy
        of an object with moment of inertia 'I'
@@ -275,33 +288,34 @@ def angular_kinetic_energy(I, w):
        
        Parameters
        ----------
-       I : float
+       i : float
        w: float 
        
        Returns
        -------
        float
     """
-    return (1/2) * I * w**2
+    return (1/2) * i * w**2
 
-def torque(r, F, theta):
+
+def torque(r, f, theta):
     """
        Calculates the torque acting on an object
-       where 'r' is the radius, 'F' is the force 
-       and 'theta' is the angle between 'r' and 'F'
+       where 'r' is the radius, 'f' is the force
+       and 'theta' is the angle between 'r' and 'f'
       
        Parameters
        ----------
-       m : float
-       v : float
        r : float
+       f : float
        theta : float
        
        Returns
        -------
        float
     """
-    return  r * F * math.sin(theta)
+    return r * f * math.sin(theta)
+
 
 def friction():
     pass
