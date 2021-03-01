@@ -109,6 +109,14 @@ def normal_force():
     pass
 
 def time_period(length):
-    return 2 * math.pi * math.sqrt(length / g)
+    """
+        Calculate the time period given length
+        Parameters
+        ----------
+        length : float
 
+        Returns
+        -------
+        float
+    """
     return 2 * math.pi * math.sqrt(length / g) 
